@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-##
-# Set up bash
-##
+echo '> Configure bash? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
-# Create directory for NPM global modules
-mkdir ~/.npm-global
+    # Create a directory for NPM global modules
+    mkdir ~/.npm-global
 
-# Source latest bash_profile version
-source .bash_profile
+    # Source latest .bash_profile
+    source "${DOTFILE_BASE}/.bash_profile"
+fi

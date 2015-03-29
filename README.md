@@ -5,15 +5,23 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 ## Usage
 
 * For a new computer, install Dropbox and run `setup.sh`
-* For subsequent changes, manually `source` or cherry-pick changes
+* For subsequent changes, run scripts manually or cherry-pick changes
 
 ## Layout
 
-* `setup.sh` - Interactive script to set up OSX the way I like it
-* `colors/` - My color palettes, which must be installed manually
-* `dotfiles/` - My dotfiles, symlinked to `~` by `setup.sh`
-* `fonts/` - Installed via Font Book, not tracked by source control
-* `scripts/` - Little scripts
-    * `balance.applescript` - OSX sometimes randomly changes audio balance, argh
-    * `com.ryanvarick.dh-dns-update.plist` - LaunchAgent to update DNS records, see [DH-DNS-Update](https://github.com/ryanvarick/dh-dns-update)
-* `terminal/` - Terminal themes
+    dotfiles/
+
+        setup.sh - Interactive script to set up OSX the way I like it
+
+        applescript/
+        colors/ - Color palettes (must be install manually)
+        fonts/ - Useful fonts (not under source control)
+        launchagents/ - OSX's replacement for crontab
+        scripts/
+            bash.sh - Setup bash
+            dotfiles.sh - Symlink dotfiles
+            defaults.sh - OSX-specific hacks
+            ssh.sh - Setup SSH
+            update.sh - Update TODO list
+            postsetup.sh - List of steps to do manually
+        terminal/ - Terminal themes

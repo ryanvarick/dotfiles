@@ -6,10 +6,10 @@
 # Initial setup
 ##
 
-clear
-
 # base paths for symlinking dotfiles (use `~/Public/` for testing)
 BASE="${HOME}/Dropbox/OSX"
+
+clear
 
 # from https://gist.github.com/brandonb927/3195465
 echo '> Set hostname (requires admin)? (y/n)'

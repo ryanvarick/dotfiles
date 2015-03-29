@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # base path for scripts
-DOTFILE_BASE="/Users/rvarick/Public/dotfiles"
-#DOTFILE_BASE="${HOME}/Dropbox/dotfiles"
+#DOTFILE_BASE="/Users/rvarick/Public/dotfiles"
+DOTFILE_BASE="${HOME}/Dropbox/dotfiles"
 export DOTFILE_BASE
 
 clear

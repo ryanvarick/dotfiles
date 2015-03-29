@@ -287,7 +287,7 @@ defaults write com.apple.Safari ShowStatusBar -bool true
 ##
 
 # Install custom theme
-open -g "${BASE}/terminal/Custom Black.terminal"
+open -g "${DOTFILE_BASE}/terminal/Custom Black.terminal"
 sleep 1
 
 # Customize default theme

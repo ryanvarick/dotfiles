@@ -14,5 +14,6 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 * `dotfiles/` - My dotfiles, symlinked to `~` by `setup.sh`
 * `fonts/` - Installed via Font Book, not tracked by source control
 * `scripts/` - Little scripts
-    * `Balance.applescript` - OSX sometimes randomly changes audio balance, argh
+    * `balance.applescript` - OSX sometimes randomly changes audio balance, argh
+    * `com.ryanvarick.dh-dns-update.plist` - LaunchAgent to update DNS records, see [DH-DNS-Update](https://github.com/ryanvarick/dh-dns-update)
 * `terminal/` - Terminal themes

@@ -1,6 +1,7 @@
-dotfiles/atom/*
-dotfiles/ssh/*_rsa
-dotfiles/ssh/*_rsa.pub
-dotfiles/ssh/authorized_keys
-dotfiles/ssh/known_hosts
+TODO.md
+home/atom/*
+home/ssh/*_rsa
+home/ssh/*_rsa.pub
+home/ssh/authorized_keys
+home/ssh/known_hosts
 fonts/*

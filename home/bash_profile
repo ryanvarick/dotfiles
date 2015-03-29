@@ -1,5 +1,4 @@
 # Terminal colors
-alias ls="ls -Gph"
 export LSCOLORS="ExbxcxdxDxegedabagacad"
 
 # Bash prompt
@@ -15,9 +14,10 @@ npm config set prefix "~/.npm-global"
 export PATH="~/.npm-global/bin:$PATH"
 
 # My aliases
-alias balance="osascript ~/Library/Scripts/balance.applescript"
+alias balance="osascript ~/Dropbox/dotfiles/applescript/balance.applescript"
 alias finder="open ."
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias ls="ls -Gph"
 alias showlibrary="chflags nohidden ~/Library/"
 alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 alias wget="curl -O"

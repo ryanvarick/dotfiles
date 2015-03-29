@@ -6,6 +6,7 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 
 * For a new computer, install Dropbox and run `setup.sh`
 * For subsequent changes, run scripts manually or cherry-pick changes
+* For a list of TODOs, run `scripts\todo.sh`
 
 ## Layout
 
@@ -20,8 +21,10 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
         scripts/
             bash.sh - Setup bash
             color_palettes.sh - Import colors
-            dotfiles.sh - Symlink dotfiles
             defaults.sh - OSX-specific hacks
             post-defaults.sh - List of tasks to perform manually
+            hostname.sh - Set hostname
             ssh.sh - Setup SSH
+            symlinks - Symlink dotfiles
+            todo.sh - Auto-generate `TODO.md` from shell files
         terminal/ - Terminal themes

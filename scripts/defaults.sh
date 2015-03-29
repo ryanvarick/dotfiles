@@ -32,7 +32,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	defaults write com.apple.dock persistent-apps -array
 	defaults write com.apple.dock persistent-others -array
 
-	# TODO: Populate desired icon layout
+	# TODO: Dock - Populate desired icon layout
 	# See https://github.com/luanmuniz/dotfiles/blob/c1eaf3c74aa7b9c41304f2419cb29c94c00002ef/functions
 fi
 
@@ -98,8 +98,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 # Hide tags in sidebar
 defaults write com.apple.finder ShowRecentTags -bool false
 
-# TODO: Sidebar customization
-# - Home, Desktop, Documents, AirDrop, All My Files, Applications, iCloud Drive
+# TODO: Finder - Customize sidebar (Home, Desktop, Documents, AirDrop, All My Files, Applications, iCloud Drive)
 
 # Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
@@ -130,8 +129,8 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Input
 ##
 
-# FIXME: Click to tap and three finger drag settings do not work for Yosemite
-# FIXME: Attempted 0 2 2 (Default) → 1 0 0 (Three finger drag enabled)
+# FIXME: Trackpad - Click to tap and three finger drag settings do not work for Yosemite
+# - Attempted 0 2 2 (Default) → 1 0 0 (Three finger drag enabled)
 # defaults -currentHost write "com.apple.trackpad.threeFingerDragGesture" -int 1
 # defaults -currentHost write "com.apple.trackpad.threeFingerHorizSwipeGesture" -int 0
 # defaults -currentHost write "com.apple.trackpad.threeFingerVertSwipeGesture" -int 0
@@ -171,15 +170,6 @@ fi
 # Mission Control
 ##
 
-# TODO: Disable automatic status updates
-# TODO: Disable groups
-
-
-
-##
-# Mission Control
-##
-
 # Disable "Automatically rearrange Spaces" (System Preferences → Mission Control)
 defaults write com.apple.dock mru-spaces -bool false
 
@@ -189,8 +179,8 @@ defaults write com.apple.dock mru-spaces -bool false
 # Notification Center
 ##
 
-# TODO: Widget order (Date, summary, reminders, calendar)
-# TODO: Disable Reminder notifications, etc.
+# TODO: Notification Center - Set widget order (Date, summary, reminders, calendar)
+# TODO: Notification Center - Disable Reminder sounds, banners
 
 
 
@@ -229,8 +219,17 @@ fi
 # Prevent iTunes from opening when iDevices are connected
 defaults write com.apple.iTunes dontAutomaticallySyncIPods -bool true
 
-# TODO: Disable notification on song change
-# TODO: Disable copy files and keep iTunes media folder organized
+# TODO: iTunes - Disable notification on song change
+# TODO: iTunes - Disable copy files and keep iTunes media folder organized
+
+
+
+##
+# Messages
+##
+
+# TODO: Messages - Disable automatic status updates
+# TODO: Messages - Disable groups
 
 
 
@@ -241,16 +240,16 @@ defaults write com.apple.iTunes dontAutomaticallySyncIPods -bool true
 # Do not automatically loading remote content
 defaults write com.apple.mail-shared DisableURLLoading -bool true
 
-# FIXME (broken for Yosemite): Disable inline attachments (just show the icons)
+# FIXME: Mail - Disable inline attachments (does not work in Yosemite)
 # defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
-# FIXME Customize toolbar (add Read/Unread buttons)
+# FIXME: Mail - Customize toolbar (add Read/Unread buttons)
 #  - Can't use defaults because it is a complex dict
 #  - Can't use Plistbuddy because it is not a "real" plist file
 # defaults write com.apple.mail "NSToolbar Configuration MainWindow":"TB Item Identifiers" -dict-add(8) -string "unread_read"
 
-# TODO: Use port 993 for Dreamhost email
-# TODO: Disable junk mail filtering
+# TODO: Mail - Use port 993 for Dreamhost email
+# TODO: Mail - Disable junk mail filtering
 
 
 
@@ -278,7 +277,7 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 # Show status bar
 defaults write com.apple.Safari ShowStatusBar -bool true
 
-# TODO: Turn off sidebar icon, move 1PW icon to the right of the address field
+# TODO: Mail - Turn off sidebar icon, move 1PW icon to the right of the address field
 
 
 
@@ -294,7 +293,7 @@ sleep 1
 defaults write com.apple.Terminal "Default Window Settings" -string "Custom Black"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Custom Black"
 
-# TODO: Startup window group
+# TODO: Terminal - Startup window group
 
 
 

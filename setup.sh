@@ -29,7 +29,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	echo '> Some changes are not applied instantly. Log out now? (y/n)'
 	read response
 	if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-		# FIXME: Crashes if single user logged in?
+		# FIXME: Auto-logout hangs if single user logged in?
 		osascript -e 'tell application "loginwindow" to «event aevtrlgo»'
 	fi
 fi

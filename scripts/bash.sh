@@ -7,4 +7,5 @@
 # Create directory for NPM global modules
 mkdir ~/.npm-global
 
-source ~/.bash_profile
+# Source latest bash_profile version
+source .bash_profile

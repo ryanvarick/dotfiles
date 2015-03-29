@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
 
-    # set up .ssh
-    # ssh-add(keys)
+echo '> Symlink ~/.ssh? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    ln -s "${DOTFILE_BASE}/.ssh" ~/.ssh
+fi
+
+echo '> Unlock private key (requires 1Pw)? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    ssh-add ~/.ssh/id_rsa
+fi
+
+echo '> Unlock Github private key (requires 1Pw)? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    ssh-add ~/.ssh/github_rsa
+fi

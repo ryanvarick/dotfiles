@@ -13,6 +13,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
 	# directories
 	ln -s "${DOTFILE_BASE}/.atom" ~/.atom
+	# ~/.ssh handled by ssh.sh
 fi
 
 echo '> Symlink ~/Downloads to ~/Desktop (requires admin)? (y/n)'

@@ -28,6 +28,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 fi
 
 # configure bash
+mkdir ~/.npm-global
 source ~/.bash_profile
 
 echo '> Symlink ~/Downloads to ~/Desktop (requires admin)? (y/n)'

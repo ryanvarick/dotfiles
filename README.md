@@ -16,12 +16,12 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 * `colors/` - Color palettes (must be install manually)
 * `fonts/` - Useful fonts (not under source control)
 * `launchagents/` - OSX replacement for crontab
-    * `dh-dns-update.plist` - See [DH-DNS-Update](https://github.com/ryanvarick/dh-dns-update)
+    * `dh-dns-update.plist` - Update DNS for home server, see [DH-DNS-Update](https://github.com/ryanvarick/dh-dns-update)
 * `scripts/`
     * `bash.sh` - Setup bash
     * `color_palettes.sh` - Import color palettes
     * `defaults.sh` - OSX-specific hacks
-    * `post-defaults.sh` - Stuff I can't figure out how to automate
+    * `defaults_manual.sh` - Stuff I don't know how to automate
     * `hostname.sh` - Set the hostname
     * `ssh.sh` - Configure SSH
     * `symlinks.sh` - Symlink dotfiles

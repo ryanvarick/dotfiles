@@ -24,7 +24,7 @@ read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
 	sh "${DOTFILE_BASE}/scripts/defaults.sh"
-	sh "${DOTFILE_BASE}/scripts/post-defaults.sh"
+	sh "${DOTFILE_BASE}/scripts/defaults_manual.sh"
 
 	echo '> Some changes are not applied instantly. Log out now? (y/n)'
 	read response

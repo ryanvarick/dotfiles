@@ -18,13 +18,13 @@ echo 'Install the following apps from the App Store:'
 echo
 echo '- 1Password, Clear, iA Writer Pro'
 echo '- Moneywell, Pixelmator, Sketch, Transmit'
-echo '- Number, iPhoto, Xcode'
+echo '- Numbers, iPhoto, Xcode'
 echo
 echo 'Install the following apps from the web:'
 echo
 echo '- Dropbox, Crashplan'
 echo '- Chrome, Firefox'
 echo '- Atom, io.js, SourceTree'
-echo '- Bartender, Fantastical, iStatsMenu (restore plist files)'
+echo '- Bartender, Fantastical, iStat Menus (Restore plist files)'
 echo '- Omnigraffle 5'
 echo

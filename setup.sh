@@ -45,14 +45,14 @@ mkdir ~/.npm-global
 source ~/.bash_profile
 
 echo '> Symlink ~/Downloads to ~/Desktop (requires admin)? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     sudo rm -rf ~/Downloads
     ln -s ~/Desktop ~/Downloads
 fi
 
 echo '> Open a color picker so you can manually import *.clr files? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	osascript -e 'tell application "terminal" to choose color' > /dev/null
 fi
@@ -81,7 +81,7 @@ defaults write com.apple.dock orientation -string 'right'
 defaults write com.apple.dock tilesize -int 40
 
 echo '> Remove all icons from the dock? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	defaults write com.apple.dock persistent-apps -array
 	defaults write com.apple.dock persistent-others -array
@@ -98,7 +98,7 @@ fi
 ##
 
 echo '> Configure energy settings (requires admin + restart)? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
 	# Display sleep (battery: 30m, power: 1hr)
@@ -213,7 +213,7 @@ defaults write -g com.apple.sound.beep.feedback -int 1
 defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool false
 
 echo '> Disable ambient light adjustments (requires admin + restart)? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
 	sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Keyboard Enabled" -bool false
@@ -258,7 +258,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -float 5
 
 echo '> Permanently delete dumb screen savers for ALL users (requires admin)? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	sudo rm -rf "/System/Library/Screen Savers/FloatingMessage.saver"
 	sudo rm -rf "/System/Library/Screen Savers/iTunes Artwork.saver"
@@ -379,7 +379,7 @@ echo '- Bartender, Fantastical, iStatsMenu (restore plist files)'
 echo '- Omnigraffle 5'
 echo
 echo '> Some changes are not applied instantly. Log out now? (y/n)'
-read -r response
+read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	# FIXME: Crashes if single user logged in?
 	osascript -e 'tell application "loginwindow" to «event aevtrlgo»'

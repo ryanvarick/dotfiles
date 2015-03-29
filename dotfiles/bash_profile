@@ -15,7 +15,7 @@ npm config set prefix "~/.npm-global"
 export PATH="~/.npm-global/bin:$PATH"
 
 # My aliases
-alias balance="osascript ~/Library/Scripts/Balance.applescript"
+alias balance="osascript ~/Library/Scripts/balance.applescript"
 alias finder="open ."
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias showlibrary="chflags nohidden ~/Library/"
@@ -47,9 +47,6 @@ alias whois="whois -h whois-servers.net"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-
-# Clean up LaunchServices to remove duplicates in the “Open With” menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Rebuild Launch Services database to de-dupe Open With submenu.
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/

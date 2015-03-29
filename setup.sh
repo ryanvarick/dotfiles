@@ -225,6 +225,15 @@ fi
 # Mission Control
 ##
 
+# TODO: Disable automatic status updates
+# TODO: Disable groups
+
+
+
+##
+# Mission Control
+##
+
 # Disable "Automatically rearrange Spaces" (System Preferences → Mission Control)
 defaults write com.apple.dock mru-spaces -bool false
 
@@ -356,6 +365,7 @@ echo 'Perform the following changes manually:'
 echo
 echo '- Verify FileVault is enabled in System Preferences → Security & Privacy'
 echo '- Configure VPN settings in System Preferences → Network'
+echo '- Disable guest user account in System Preferences → Users & Groups'
 echo
 echo '- Enable "Change Picture" in System Preferences → Desktop & Screensaver'
 echo '- Enable "Tap to Click" in System Preferences → Trackpad → Point & Click'

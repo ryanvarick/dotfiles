@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-##
-# Configure hostname
-##
-
 # Taken from https://gist.github.com/brandonb927/3195465
 
 echo '> Set hostname (requires admin)? (y/n)'

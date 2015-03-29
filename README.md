@@ -19,9 +19,9 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
         launchagents/ - OSX's replacement for crontab
         scripts/
             bash.sh - Setup bash
+            color_palettes.sh - Import colors
             dotfiles.sh - Symlink dotfiles
             defaults.sh - OSX-specific hacks
+            post-defaults.sh - List of tasks to perform manually
             ssh.sh - Setup SSH
-            update.sh - Update TODO list
-            postsetup.sh - List of steps to do manually
         terminal/ - Terminal themes

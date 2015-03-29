@@ -9,7 +9,7 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 
 ## Layout
 
-* `setup.sh` - Interactive script to setup OSX the way I like it
+* `setup.sh` - Interactive script to set up OSX the way I like it
 * `colors/` - My color palettes, which must be installed manually
 * `dotfiles/` - My dotfiles, symlinked to `~` by `setup.sh`
 * `fonts/` - Installed via Font Book, not tracked by source control

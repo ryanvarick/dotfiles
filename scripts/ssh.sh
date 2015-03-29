@@ -6,6 +6,12 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     ln -s "${DOTFILE_BASE}/.ssh" ~/.ssh
 fi
 
+echo '> Drop all SSH identities? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    ssh-add -D
+fi
+
 echo '> Unlock private key (requires 1Pw)? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then

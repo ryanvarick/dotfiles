@@ -1,7 +1,7 @@
 TODO.md
-home/atom/*
-home/ssh/*_rsa
-home/ssh/*_rsa.pub
-home/ssh/authorized_keys
-home/ssh/known_hosts
+.atom/*
+.ssh/*_rsa
+.ssh/*_rsa.pub
+.ssh/authorized_keys
+.ssh/known_hosts
 fonts/*

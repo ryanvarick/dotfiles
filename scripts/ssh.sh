@@ -15,11 +15,11 @@ fi
 echo '> Unlock private key (requires 1Pw)? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    ssh-add ~/.ssh/id_rsa
+    ssh-add -K ~/.ssh/id_rsa
 fi
 
 echo '> Unlock Github private key (requires 1Pw)? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    ssh-add ~/.ssh/github_rsa
+    ssh-add -K ~/.ssh/github_rsa
 fi

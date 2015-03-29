@@ -1,7 +1,13 @@
-# Terminal colors and bash prompt
+# Terminal colors
 alias ls="ls -Gph"
-export PS1="\u@\033[1;32m\h\033[0m:\w\$ "
 export LSCOLORS="ExbxcxdxDxegedabagacad"
+
+# Bash prompt
+if [[ $HOSTNAME == "home.ryanvarick.com" ]]; then
+    export PS1="\u@\033[1;33m\h\033[0m:\w\$ "
+else
+    export PS1="\u@\033[1;32m\h\033[0m:\w\$ "
+fi
 
 # Fix Node global modules
 # - See: https://docs.npmjs.com/getting-started/fixing-npm-permissions (Option 2)

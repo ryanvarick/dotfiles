@@ -1,0 +1,5 @@
+dotfiles/atom/*
+dotfiles/ssh/*_rsa
+dotfiles/ssh/*_rsa.pub
+dotfiles/ssh/known_hosts
+fonts/*

@@ -1,0 +1,10 @@
+syntax: glob
+
+*~
+.DS_Store
+_deprecated
+node_modules
+styles.css
+db
+client/public/data
+npm-debug.log

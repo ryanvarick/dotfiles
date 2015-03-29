@@ -10,21 +10,20 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 
 ## Layout
 
-    dotfiles/
-
-        setup.sh - Interactive script to set up OSX the way I like it
-
-        applescript/
-        colors/ - Color palettes (must be install manually)
-        fonts/ - Useful fonts (not under source control)
-        launchagents/ - OSX's replacement for crontab
-        scripts/
-            bash.sh - Setup bash
-            color_palettes.sh - Import colors
-            defaults.sh - OSX-specific hacks
-            post-defaults.sh - List of tasks to perform manually
-            hostname.sh - Set hostname
-            ssh.sh - Setup SSH
-            symlinks - Symlink dotfiles
-            todo.sh - Auto-generate `TODO.md` from shell files
-        terminal/ - Terminal themes
+* `setup.sh` - Interactive script to set up OSX the way I like it
+* `applescript/` - Small AppleScript hacks
+    * `balance.applescript` - OSX has an annoying tendency to change audio balance :-/
+* `colors/` - Color palettes (must be install manually)
+* `fonts/` - Useful fonts (not under source control)
+* `launchagents/` - OSX replacement for crontab
+    * `dh-dns-update.plist` - See [DH-DNS-Update](https://github.com/ryanvarick/dh-dns-update)
+* `scripts/`
+    * `bash.sh` - Setup bash
+    * `color_palettes.sh` - Import color palettes
+    * `defaults.sh` - OSX-specific hacks
+    * `post-defaults.sh` - Stuff I can't figure out how to automate
+    * `hostname.sh` - Set the hostname
+    * `ssh.sh` - Configure SSH
+    * `symlinks.sh` - Symlink dotfiles
+    * `todo.sh` - Auto-generate `TODO.md` from shell files
+* `terminal/` - Terminal themes

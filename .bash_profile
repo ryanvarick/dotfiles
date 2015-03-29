@@ -13,6 +13,9 @@ fi
 npm config set prefix "~/.npm-global"
 export PATH="~/.npm-global/bin:$PATH"
 
+# Used by dotfile scripts
+source ~/.dotfile_base
+
 # My aliases
 alias balance="osascript ~/Dropbox/dotfiles/applescript/balance.applescript"
 alias finder="open ."

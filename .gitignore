@@ -4,5 +4,5 @@
 .ssh/authorized_keys
 .ssh/known_hosts
 fonts/*
-NOTES.md
 TODO.md
+SCRATCH.md

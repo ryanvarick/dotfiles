@@ -6,7 +6,7 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
 
 * For a new computer, install Dropbox and run `setup.sh`
 * For subsequent changes, run scripts manually or cherry-pick changes
-* For a list of TODOs, run `scripts\todo.sh`
+* For a list of TODOs, run `scripts/todo.sh`
 
 ## Layout
 

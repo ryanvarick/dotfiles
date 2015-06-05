@@ -4,6 +4,9 @@ echo '> Symlink ~/.ssh? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     ln -s "${DOTFILE_BASE}/.ssh" ~/.ssh
+
+    # because Dropbox sometimes resets permissions
+    chmod 600 ~/.ssh/*
 fi
 
 echo '> Drop all SSH identities (must be run locally)? (y/n)'

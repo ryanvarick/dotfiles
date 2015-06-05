@@ -25,7 +25,11 @@ alias screenshare="open vnc://home"
 alias sourcetree="open -a SourceTree ."
 alias showlibrary="chflags nohidden ~/Library/"
 alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
-alias wget="curl -O"
+# alias wget="curl -O"
+
+# dangerous/complicated aliases
+alias rmall="echo 'find . [-type d] -name 'index.*' -print -exec rm {} \;'"
+alias spider="echo 'wget -r --user= --password= --no-parent'"
 
 # Dev aliases
 alias jingo="clear && ./jingo -c config.yaml"

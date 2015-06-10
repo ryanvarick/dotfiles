@@ -12,6 +12,7 @@ fi
 # - See: https://docs.npmjs.com/getting-started/fixing-npm-permissions (Option 2)
 npm config set prefix "~/.npm-global"
 export PATH="~/.npm-global/bin:$PATH"
+export PATH="/Library/PostgreSQL/9.3/bin:$PATH"   # for work
 
 # Used by dotfile scripts
 source ~/.dotfile_base

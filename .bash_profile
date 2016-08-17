@@ -1,11 +1,16 @@
+# Git
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source "${GITAWAREPROMPT}/main.sh"
+
 # Terminal colors
 export LSCOLORS="ExbxcxdxDxegedabagacad"
 
 # Bash prompt
 if [[ $HOSTNAME == "home.ryanvarick.com" ]]; then
-    export PS1="\u@\033[1;33m\h\033[0m:\w\$ "
+    export PS1="\u@\[\033[1;33m\h\033[0m\]:\w\$ "
 else
-    export PS1="\u@\033[1;32m\h\033[0m:\w\$ "
+    # export PS1="\u@\[\033[1;32m\h\033[0m\]:\w\$ "
+    export PS1="\u@\[$bldgrn\]\h\[$txtrst\] \w \[$txtgrn\]\$git_branch\[$txtwht\]\$git_dirty\[$txtrst\]\$ "
 fi
 
 # Fix Node global modules

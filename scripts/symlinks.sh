@@ -6,6 +6,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 
 	# dotfiles
 	ln -s "${DOTFILE_BASE}/.bash_profile" ~/.bash_profile
+	ln -s "${DOTFILE_BASE}/.bash" ~/.bash
 	ln -s "${DOTFILE_BASE}/.emacs" ~/.emacs
 	ln -s "${DOTFILE_BASE}/.gitconfig" ~/.gitconfig
 	ln -s "${DOTFILE_BASE}/.gitignore_global" ~/.gitignore_global

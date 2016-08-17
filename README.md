@@ -22,6 +22,7 @@ I keep my configuration files on Dropbox, since it is usually one of the first a
     * `color_palettes.sh` - Import color palettes
     * `defaults.sh` - OSX-specific hacks
     * `defaults_manual.sh` - Stuff I don't know how to automate
+    * `fixspotlight.sh` - Kill runaway spotlight process (probably fixed now)
     * `hostname.sh` - Set the hostname
     * `ssh.sh` - Configure SSH
     * `symlinks.sh` - Symlink dotfiles

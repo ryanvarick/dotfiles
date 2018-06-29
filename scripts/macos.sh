@@ -30,7 +30,7 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 		# Hide tags in sidebar
 		defaults write com.apple.finder ShowRecentTags -bool false
 
-		# TODO: Finder - Customize sidebar (Home, Desktop, Documents, AirDrop, All My Files, Applications, iCloud Drive)
+		# TODO: Finder - Customize sidebar (AirDrop, Home, Applications, Desktop, others)
 
 		# Display full POSIX path as Finder window title
 		defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
@@ -150,8 +150,9 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 		defaults write com.apple.screensaver askForPasswordDelay -float 5
 
 		# Remove dumb screensavers
-		sudo rm -rf "/System/Library/Screen Savers/FloatingMessage.saver"
-		sudo rm -rf "/System/Library/Screen Savers/iTunes Artwork.saver"
-		sudo rm -rf "/System/Library/Screen Savers/Word of the Day.qtz"
+		# FIXME: No longer works with SIP
+		# sudo rm -rf "/System/Library/Screen Savers/FloatingMessage.saver"
+		# sudo rm -rf "/System/Library/Screen Savers/iTunes Artwork.saver"
+		# sudo rm -rf "/System/Library/Screen Savers/Word of the Day.qtz"
 
 fi

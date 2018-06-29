@@ -25,15 +25,13 @@ source ~/.bash_local
 source ~/.dotfile_base
 
 # My aliases
-alias balance="osascript ~/Dropbox/dotfiles/applescript/balance.applescript"
 alias finder="open ."
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias ls="ls -Gph"
 alias screenshare="open vnc://home"
-alias sourcetree="open -a SourceTree ."
+alias st="open -a SourceTree ."
 alias showlibrary="chflags nohidden ~/Library/"
 alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
-# alias wget="curl -O"
 
 # dangerous/complicated aliases
 alias rmall="echo 'find . [-type d] -name 'index.*' -print -exec rm {} \;'"

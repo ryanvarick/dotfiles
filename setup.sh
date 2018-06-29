@@ -12,7 +12,6 @@ export DOTFILE_BASE
 
 sh "${DOTFILE_BASE}/scripts/symlinks.sh"
 sh "${DOTFILE_BASE}/scripts/bash.sh"
-
 sh "${DOTFILE_BASE}/scripts/color_palettes.sh"
 sh "${DOTFILE_BASE}/scripts/date_time.sh"
 sh "${DOTFILE_BASE}/scripts/dock.sh"

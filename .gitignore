@@ -1,8 +1,5 @@
 .atom/*
-.ssh/*_rsa
-.ssh/*_rsa.pub
-.ssh/authorized_keys
-.ssh/known_hosts
 fonts/*
+templates/*
 TODO.md
 SCRATCH.md

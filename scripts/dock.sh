@@ -3,9 +3,9 @@
 echo '> Configure dock (System Preferences → Dock)? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    defaults write com.apple.dock autohide -bool true
-    defaults write com.apple.dock orientation -string 'right'
-    defaults write com.apple.dock tilesize -int 40
+	defaults write com.apple.dock autohide -bool true
+	defaults write com.apple.dock orientation -string 'right'
+	defaults write com.apple.dock tilesize -int 40
 fi
 
 echo '> Remove all icons from the dock? (y/n)'

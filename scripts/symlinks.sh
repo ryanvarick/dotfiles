@@ -1,25 +1,26 @@
 #!/usr/bin/env bash
 
+source ~/.dotfile_base
+
 echo '> Symlink dotfiles? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+	ln -sf "${DOTFILE_BASE}/.bash_profile" ~/.bash_profile
+	ln -sf "${DOTFILE_BASE}/.bash" ~/.bash
+	ln -sf "${DOTFILE_BASE}/.emacs" ~/.emacs
+	ln -sf "${DOTFILE_BASE}/.gitconfig" ~/.gitconfig
+	ln -sf "${DOTFILE_BASE}/.gitignore_global" ~/.gitignore_global
+	ln -sf "${DOTFILE_BASE}/.hgignore_global" ~/.hgignore_global
+fi
 
-	# dotfiles
-	ln -s "${DOTFILE_BASE}/.bash_profile" ~/.bash_profile
-	ln -s "${DOTFILE_BASE}/.bash" ~/.bash
-	ln -s "${DOTFILE_BASE}/.emacs" ~/.emacs
-	ln -s "${DOTFILE_BASE}/.gitconfig" ~/.gitconfig
-	ln -s "${DOTFILE_BASE}/.gitignore_global" ~/.gitignore_global
-	ln -s "${DOTFILE_BASE}/.hgignore_global" ~/.hgignore_global
-
-	# directories
-	ln -s "${DOTFILE_BASE}/.atom" ~/.atom
-	# ~/.ssh handled by ssh.sh
+echo '> Symlink dotfile base to .icloud? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+	ln -sf ${DOTFILE_BASE} ~/.icloud
 fi
 
 echo '> Symlink ~/Downloads to ~/Desktop (requires admin)? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    sudo rm -rf ~/Downloads
-    ln -s ~/Desktop ~/Downloads
+	ln -sf ~/Desktop ~/Downloads
 fi

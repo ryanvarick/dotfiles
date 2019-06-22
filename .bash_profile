@@ -1,28 +1,31 @@
-# Git
-export GITAWAREPROMPT=~/.bash/git-aware-prompt
+# Used by dotfile scripts
+source ~/.dotfile_base
+
+# Bash prompt - Git
+export GITAWAREPROMPT="${DOTFILE_BASE}/.bash/git-aware-prompt"
 source "${GITAWAREPROMPT}/main.sh"
 
-# Terminal colors
+# Bash prompt - Terminal colors
 export LSCOLORS="ExbxcxdxDxegedabagacad"
 
-# Bash prompt
+# Bash prompt - Prompt and host name
 if [[ $HOSTNAME == "home.ryanvarick.com" ]]; then
-    export PS1="\u@\[\033[1;33m\h\033[0m\]:\w\$ "
+	export PS1="\u@\[\033[1;33m\h\033[0m\]:\w\$ "
 else
-    # export PS1="\u@\[\033[1;32m\h\033[0m\]:\w\$ "
-    export PS1="\u@\[$bldgrn\]\h\[$txtrst\] \w \[$txtgrn\]\$git_branch\[$txtwht\]\$git_dirty\[$txtrst\]\$ "
+	# export PS1="\u@\[\033[1;32m\h\033[0m\]:\w\$ "
+	export PS1="\u@\[$bldgrn\]\h\[$txtrst\] \w \[$txtgrn\]\$git_branch\[$txtwht\]\$git_dirty\[$txtrst\]\$ "
 fi
+
+# Local configuration
+source ~/.bash_local
+
+# VS Code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Fix Node global modules
 # - See: https://docs.npmjs.com/getting-started/fixing-npm-permissions (Option 2)
 npm config set prefix "~/.npm-global"
 export PATH="~/.npm-global/bin:$PATH"
-
-# Local configuration
-source ~/.bash_local
-
-# Used by dotfile scripts
-source ~/.dotfile_base
 
 # My aliases
 alias finder="open ."

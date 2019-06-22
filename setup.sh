@@ -6,11 +6,16 @@ clear
 sudo -v
 
 # base path for scripts
-#DOTFILE_BASE="/Users/rvarick/Public/dotfiles"
-DOTFILE_BASE="${HOME}/Dropbox/dotfiles"
-export DOTFILE_BASE
+DOTFILE_BASE="/Users/rvarick/Library/Mobile Documents/com~apple~CloudDocs/dotfiles" # iCloud
+export DOTFILE_BASE=${DOTFILE_BASE}
 
-sh "${DOTFILE_BASE}/scripts/symlinks.sh"
+echo '> Write .dotfile_base? (y/n)'
+read response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+	echo "export DOTFILE_BASE=\"${DOTFILE_BASE}\"" > ~/.dotfile_base
+fi
+
+sh "${DOTFILE_BASE}/scripts/apps.sh"
 sh "${DOTFILE_BASE}/scripts/bash.sh"
 sh "${DOTFILE_BASE}/scripts/color_palettes.sh"
 sh "${DOTFILE_BASE}/scripts/date_time.sh"
@@ -18,14 +23,11 @@ sh "${DOTFILE_BASE}/scripts/dock.sh"
 sh "${DOTFILE_BASE}/scripts/energy.sh"
 sh "${DOTFILE_BASE}/scripts/hostname.sh"
 sh "${DOTFILE_BASE}/scripts/macos.sh"
-sh "${DOTFILE_BASE}/scripts/apps.sh"
+sh "${DOTFILE_BASE}/scripts/node.sh"
+sh "${DOTFILE_BASE}/scripts/symlinks.sh"
 
-# TODO: Install fonts
-# TODO: Install scripts
-
-echo '> Some changes are not applied instantly. Log out now? (y/n)'
+echo '> Log out now? (y/n)'
 read response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-	# FIXME: Auto-logout hangs if single user logged in?
 	osascript -e 'tell application "loginwindow" to «event aevtrlgo»'
 fi
